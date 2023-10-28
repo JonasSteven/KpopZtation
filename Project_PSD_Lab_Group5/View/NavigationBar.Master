@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NavigationBar.master.cs" Inherits="Project_PSD_Lab_Group5.View.NavigationBar" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Button ID="goToHomeBtn" runat="server" Text="Home" CausesValidation="false" OnClick="goToHomeBtn_Click"/>
+            <asp:Button ID="goToLoginBtn" runat="server" Text="Login" CausesValidation="false" OnClick="goToLoginBtn_Click"/>
+            <asp:Button ID="goToRegisterBtn" runat="server" Text="Register" CausesValidation="false" OnClick="goToRegisterBtn_Click"/>
+            <asp:Button ID="goToProfileBtn" runat="server" Text="Update Profile" CausesValidation="false" OnClick="goToProfileBtn_Click"/>
+            <asp:Button ID="goToCartBtn" runat="server" Text="Cart" CausesValidation="false" OnClick="goToCartBtn_Click"/>
+            <asp:Button ID="goToTransaction" runat="server" Text="Transaction" CausesValidation="false" OnClick="goToTransaction_Click"/>
+            <asp:Button ID="logOutBtn" runat="server" Text="Log Out" CausesValidation="false" OnClick="logOutBtn_Click"/>
+        </div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
